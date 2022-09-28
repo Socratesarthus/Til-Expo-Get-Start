@@ -3,28 +3,12 @@ import { Image, View, StyleSheet } from 'react-native';
 import logo from './assets/icons8-psychotherapy-100.png';
 import FormCreateClient from "./components/FormCreateClient";
 
-export default function App() {
-  const [user, setUser] = React.useState([
-    {
-      id: '1',
-      name: 'clinte 01',
-      phone: '31988776655',
-      email: 'email@email.com',
-      photo: ''
-    },
-    {
-      id: '2',
-      name: 'clinte 02',
-      phone: '31987654321',
-      email: 'email@email.com',
-      photo: ''
-    }
-  ]);
+export default function App() {  
   
   return (
     <View style={styles.container}>
 
-      <Image source={logo} style={styles.logo} />
+      <Image source={logo} style={styles.logo} />          
 
       <FormCreateClient />      
 

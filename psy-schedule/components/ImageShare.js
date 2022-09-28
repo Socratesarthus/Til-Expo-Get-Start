@@ -1,7 +1,6 @@
 import React from 'react';
 import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
-import logo from '../assets/FormCreateClient-logo.png';
 
 export default function ImageShare() {
     const [selectedImage, setSelectedImage] = React.useState(null);
@@ -29,8 +28,7 @@ export default function ImageShare() {
 
 
     return (
-        <View style={styles.container}>
-            <Image source={logo} style={styles.logo} />
+        <View style={styles.container}>            
 
             <TouchableOpacity
                 onPress={openImagePickerAsync}
@@ -64,8 +62,8 @@ const styles = StyleSheet.create({
         color: '#fff',
     },
     thumbnail: {
-        width: 200,
-        height: 200,
+        width: 150,
+        height: 150,
         resizeMode: "contain",
         borderRadius: 99
     },
